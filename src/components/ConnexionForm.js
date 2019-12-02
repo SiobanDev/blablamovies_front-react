@@ -1,12 +1,24 @@
 import React from 'react';
+import {apiLogin} from "../services/blablamovieApiService";
 
-const connexionForm = () => {
+const ConnexionForm = () => {
+    // let $connexionForm  = document.getElementById("connexion-form");
+    // $connexionForm.addEventListener("onSubmit", () =>{
+    //     getBlablaMovieApiData
+    // });
+
+    const submitConnexion = async () => {
+        await apiLogin;
+
+
+    };
+
     return(
         <div id="form-content" className="row">
             <div className="col-md-8 order-md-1">
                 <h4 className="mb-3">Connexion</h4>
                 <form
-                    method="POST"
+                    onSubmit={submitConnexion}
                     id="connexion-form"
                     className="needs-validation"
                 >
@@ -23,7 +35,6 @@ const connexionForm = () => {
                             id="mail"
                             name="mail"
                             placeholder="Mail"
-                            onSubmit="validateMail()"
                             autoFocus
                         />
                     </div>
@@ -50,11 +61,10 @@ const connexionForm = () => {
                     >
                         Connexion
                     </button>
-
                 </form>
             </div>
         </div>
     );
 };
 
-export default connexionForm;
+export default ConnexionForm;

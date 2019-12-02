@@ -7,16 +7,11 @@ import MainContainer from "./components/layouts/MainContainer";
 function App() {
   return (
     <>
-      <header className="row App-header">
         <Header />
-      </header>
 
         <MainContainer />
 
-      <footer className="row">
-        <Footer />>
-      </footer>
-
+        <Footer />
     </>
   );
 }

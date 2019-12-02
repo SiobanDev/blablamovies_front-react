@@ -9,53 +9,56 @@ import linkedin from '../../images/ic-linkedin.png';
 class Footer extends Component {
     render = () => {
         return (
-            <div className="footer-row col-xs">
-                <ul>
-                    <li className="logo-item item col-s-2">
-                        <Logo />
-                    </li>
+            <footer className="row">
 
-                    <FooterNav/>
+                <div className="footer-row col-xs">
+                    <ul>
+                        <li className="logo-item item col-s-2">
+                            <Logo/>
+                        </li>
 
-                    <li className="media-items">
-                        <div className="media-item nav-item">
-                            <a className="facebook-item" href="/facebook">
-                                <img
-                                    className="fb-icon icon"
-                                    src={facebook}
-                                    alt="icone facebook"
-                                />
-                            </a>
+                        <FooterNav/>
 
-                            <a className="pinterest-item" href="/pinterest">
-                                <img
-                                    className="pint-icon icon"
-                                    src={pinterest}
-                                    alt="icone pinterest" />
-                            </a>
-                        </div>
+                        <li className="media-items">
+                            <div className="media-item nav-item">
+                                <a className="facebook-item" href="">
+                                    <img
+                                        className="fb-icon icon"
+                                        src={facebook}
+                                        alt="icone facebook"
+                                    />
+                                </a>
 
-                        <div className="media-item nav-item">
-                            <a className="twitter-item" href="/twitter">
-                                <img
-                                    className="tw-icon icon"
-                                    src={twitter}
-                                    alt="icone twitter"
-                                />
-                            </a>
+                                <a className="pinterest-item" href="">
+                                    <img
+                                        className="pint-icon icon"
+                                        src={pinterest}
+                                        alt="icone pinterest"/>
+                                </a>
+                            </div>
 
-                            <a className="linkedin-item" href="/linkedin">
-                                <img
-                                    className="linked-icon icon"
-                                    src={linkedin}
-                                    alt="icone linkedin"
-                                />
-                            </a>
-                        </div>
+                            <div className="media-item nav-item">
+                                <a className="twitter-item" href="">
+                                    <img
+                                        className="tw-icon icon"
+                                        src={twitter}
+                                        alt="icone twitter"
+                                    />
+                                </a>
 
-                    </li>
-                </ul>
-            </div>
+                                <a className="linkedin-item" href="">
+                                    <img
+                                        className="linked-icon icon"
+                                        src={linkedin}
+                                        alt="icone linkedin"
+                                    />
+                                </a>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </footer>
         );
     }
 }

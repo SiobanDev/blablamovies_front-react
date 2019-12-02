@@ -1,14 +1,7 @@
 import React from 'react';
+import {connexionUrl, inscriptionUrl} from "../constants";
 
 const Home = () => {
-
-    const connexionOnClickHandler = () => {
-
-    };
-
-    const inscriptionOnClickHandler = () => {
-
-    };
 
     return(
         <div className="accueil-content">
@@ -26,26 +19,22 @@ const Home = () => {
                 <p className="members-hook">Déjà <span className="members-number">284 056</span> membres</p>
 
                 <div id="home-buttons">
-                    <button
+                    <a
                         id="connexion-btn"
                         className="btn"
-                        onClick={connexionOnClickHandler}
+                        href={connexionUrl}
                     >
                         CONNEXION
-                    </button>
+                    </a>
 
-                    <button
+                    <a
                         id="inscription-btn"
                         className="btn"
-                        onClick={inscriptionOnClickHandler}
+                        href={inscriptionUrl}
                     >
                         INSCRIPTION
-                    </button>
+                    </a>
                 </div>
-
-                <connexionForm />
-                <inscriptionForm/>
-
             </div>
         </div>
     );

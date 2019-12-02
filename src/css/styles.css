@@ -239,7 +239,7 @@ p.members-hook{
 }
 
 #home-buttons{
-    display: none;
+    display: flex;
     flex-direction: column-reverse;
     min-width: 115px;
     width: 20%;
@@ -249,9 +249,9 @@ p.members-hook{
 #connexion-btn, #inscription-btn{
     background-color: transparent;
     color: #f7b436;
-    border: solid 2px #f7b436;
+    border: solid 3px #f7b436;
     border-radius: 20px;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
 }
 
 #inscription-btn{
@@ -260,7 +260,7 @@ p.members-hook{
     margin-left: 0;
 }
 
-#connexion-btn:hover{
+#connexion-btn:hover, #inscription-btn:hover{
     background-color: white;
     color: #f7b436;
 }
@@ -611,8 +611,8 @@ footer .footer-row .facebook-item, footer .footer-row .pinterest-item, footer .f
     }
 
     #home-buttons{
-        display: flex;
         flex-direction: row;
+        margin: 20px 0;
     }
 
     #home-buttons #inscription-btn{
